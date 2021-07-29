@@ -11,9 +11,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(publiPatch));
 
 
-app.listen (3000, function (){
+app.listen ( process.env.PORT  || 3000, function (){
   console.log ("La app esta funcionando en la url http://localhost:3000")
 })
+
 
 app.get ("/",(req, res)=>{
   return res.sendFile(`${viewsPath}/index.html`)
