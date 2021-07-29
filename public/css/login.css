@@ -1,0 +1,40 @@
+header{
+  width: 100%;
+  height: 50px;
+  background-color:white;
+  text-align: center;
+}
+
+input::after[type="text"]{
+  content:"error";
+  color: red;
+}
+
+a:active{
+  background-color: saddlebrown;
+}
+
+a:visited{
+  background-color: seagreen;
+  color: yellow;
+}
+
+
+input[type="text"]:focus{
+  color: aqua;
+  width: 250px;
+}
+#email:target{
+  background-color: red;
+}
+#apellido::before{
+
+  content: "pruebaa";
+  display: block;
+  color: brown;
+  margin: 40px;
+  width: 150px;
+  height: 150px;
+
+  
+}

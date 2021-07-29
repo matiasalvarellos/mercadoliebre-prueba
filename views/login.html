@@ -1,0 +1,88 @@
+<html>
+  <head>
+
+    <title>Formulario Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+
+  </head>
+
+  <body>
+    <a href="/register">
+      crea tu cuenta  
+    </a>
+
+    <header>
+      <nav>
+        <a class="facebook" href="https://www.facebook.com">facebook</a>
+        <a class="twitch" href="https://www.twitch.com/">twitch</a>
+      </nav>
+    </header>
+
+    <h1>Formulario de login</h1>
+    
+    <form action="/" method="GET">
+
+      <div id="nombreInput">
+        <label class="nombre" for="nombre">Nombre:<input type="text" name="nombre" id="nombre" value="matias" placeholder="Completa con un nombre"></label>
+        
+      </div>
+      <div>
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" required  placeholder="Completa con un email">
+      </div>
+      <div>
+        <label for="">Password:</label>
+        <input type="password" name="password" placeholder="Completa con password">
+      </div>
+
+      <div>
+        <p>Les gusta programacion?</p>
+        <input type="radio" name="pregunta" id="a" value="si"><label for="a">Si</label>
+        <input type="radio" name="pregunta" id="b" value="no"><label for="b">No</label>
+      </div>
+
+      <div>
+        <p>Que comida les gusta mas?</p>
+
+        <input type="checkbox" checked name="comida" id="mila"><label for="mila">milanesa</label>
+        <input type="checkbox" name="comida" value="hamburguesa">
+        <input type="checkbox" name="comida" value="paty">
+
+      </div>
+      
+      <div>
+        <p>Seleccionar nacionalidad</p>
+        <select name="nacionalidad" id="nacionalidad">
+          <option disabled selected >Elegir pais</option>
+          <option value="arg">
+            argentina
+          </option>
+          <option value="br">
+            Brazil
+          </option>
+          <option value="uruguay">
+            uruguay
+          </option>
+        </select>
+
+      </div>
+      <textarea rows="10" cols="20" name="description" id="description">
+        Deja su comentario
+      </textarea>
+
+      <input type="file" name="cv" multiple accept=".txt">
+      <input type="date" name="nacimiento"  >
+      
+      <button type="submit">
+        enviar
+      </button>
+      <div>
+        <input type="text" id="apellido" value="reina">
+      </div>
+
+    </form>
+
+    
+
+  </body>
+</html>
